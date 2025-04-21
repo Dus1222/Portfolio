@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Dushyant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #15152f;
+      padding: 4rem 2rem;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 255, 255, 0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #00ffe7;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.15em solid #00ffe7;
+      animation: typing 2.5s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      opacity: 0;
+      animation: fadeInText 2s ease-in 3s forwards;
+    }
+
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .projects-section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #7ee8fa;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #00ffe7;
+      padding-left: 1rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #1f1f2f;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 231, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .project-title {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #00ffe7;
+      margin-top: 1rem;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background-color: #00ffe7;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .project-link:hover {
+      background-color: #00bcd4;
+      color: #fff;
+    }
+
+    footer {
+      background: #15152f;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <p>Explore the projects I've built and the problems I've solved using technology!</p>
+  </header>
+
+  <main class="projects-section">
+    <!-- Project Section Title -->
+    <div class="section-title">Featured Projects</div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="your-image-1.jpg" alt="Project 1" />
+        <div class="project-title">Plant Disease Detection</div>
+        <div class="project-description">
+          Built an AI-powered web app for detecting plant diseases using machine learning and image processing.
+        </div>
+        <a href="https://github.com/your-repo-1" class="project-link" target="_blank">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="your-image-2.jpg" alt="Project 2" />
+        <div class="project-title">Soil Fertility Estimator</div>
+        <div class="project-description">
+          Developed an application that predicts soil fertility levels using image processing and machine learning.
+        </div>
+        <a href="https://github.com/your-repo-2" class="project-link" target="_blank">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="your-image-3.jpg" alt="Project 3" />
+        <div class="project-title">EMG-Based Exoskeleton</div>
+        <div class="project-description">
+          Created a system that controls an exoskeleton based on EMG signals, designed for rehabilitation.
+        </div>
+        <a href="https://github.com/your-repo-3" class="project-link" target="_blank">View Project</a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="your-image-4.jpg" alt="Project 4" />
+        <div class="project-title">Smart Agriculture System</div>
+        <div class="project-description">
+          Built a smart farming solution using IoT sensors to monitor crop health and optimize water usage.
+        </div>
+        <a href="https://github.com/your-repo-4" class="project-link" target="_blank">View Project</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dushyant. All rights reserved.</p>
+  </footer>
+</body>
+</html>

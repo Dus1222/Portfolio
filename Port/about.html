@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Dushyant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a0a23, #1e1e38);
+      color: #e0e0e0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #15152f;
+      padding: 4rem 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+      box-shadow: 0 5px 15px rgba(0, 255, 255, 0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #00ffe7;
+      text-shadow: 0 0 15px #00ffe7;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      color: #7ee8fa;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin: 0.5rem 0;
+      transition: transform 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateX(10px);
+      color: #00ffe7;
+    }
+
+    footer {
+      background: #15152f;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="typed-title">About Me</h1>
+    <p>Know more about who I am and what I do</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Hello! I'm Dushyant 👋</h2>
+      <p>
+        I'm a passionate Computer Science Engineering student at Manav Rachna University, Faridabad, with a keen interest in Artificial Intelligence, IoT, and Full Stack Development.
+      </p>
+      <p>
+        My journey in tech started with simple web pages, but over time, I’ve dived deep into machine learning, embedded systems, and smart automation. I’ve built applications ranging from plant disease detection tools to soil fertility estimators and even EMG-based exoskeletons.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why Tech?</h2>
+      <p>
+        Because it gives me the power to bring ideas to life! I'm fascinated by how data and devices can work together to solve critical challenges in health, agriculture, and sustainability. My goal is to innovate at the intersection of AI and hardware.
+      </p>
+    </section>
+
+    <section>
+      <h2>Fun Facts 🎯</h2>
+      <ul>
+        <li>I’m a night owl coder 🌙</li>
+        <li>Love working with sensors, circuits & code</li>
+        <li>I enjoy mentoring and sharing tech tips with peers</li>
+        <li>Currently exploring advanced CNNs and Arduino-based robotics</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dushyant. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Optional typewriter effect for About Me title
+    const title = document.getElementById('typed-title');
+    const fullText = 'About Me';
+    let index = 0;
+
+    function typeWriter() {
+      if (index <= fullText.length) {
+        title.innerText = fullText.slice(0, index++);
+        setTimeout(typeWriter, 100);
+      }
+    }
+    typeWriter();
+  </script>
+</body>
+</html>
